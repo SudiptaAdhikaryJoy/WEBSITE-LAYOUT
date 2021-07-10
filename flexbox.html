@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            display: flex;
+            border: 2px dotted slategray;
+            height: 500px;
+            /* horizontally items center */
+            /* justify-content: center; */
+            /* justify-content: stretch; */
+            /* vertically items center */
+            /* align-items: center; */
+
+        }
+        .box{
+            width: 200px;
+            /* height: 200px; */
+            border: 3px dashed rebeccapurple;
+            font-size: 3em;
+            /* if we try to stretch the box elements then justify-content: center; and align-items, remove the height */
+        }
+        #box-1{
+            order: 2;
+        }
+
+        #box-2{
+            /* it stretches the box-2  */
+            order: 1;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <h2>I am flexible right now</h2>
+    <div class="container">
+        <div id="box-1" class="box">BOX-1</div>
+        <div id="box-2" class="box">BOX-2</div>
+        <!-- <div class="box">BOX-3</div> -->
+        <!-- <div class="box">BOX-4</div> -->
+    </div>
+
+</body>
+</html>
