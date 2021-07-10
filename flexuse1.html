@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <script src="https://kit.fontawesome.com/ee80490f47.js" crossorigin="anonymous"></script>
+    <style>
+        nav a{
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+
+        }
+        .login-form input, button{
+            font-size: 1em;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid lightblue;
+            border-radius: 5px;
+        }
+
+        .login-form button{
+            background-color: rgb(44, 177, 177);
+            color: whitesmoke;
+            border: 0;
+            padding: 5px;
+            font-weight: 700;
+        }
+
+        .login-form{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+      <body>
+            <header>
+                <nav>
+                    <span>
+                        <a href="">Home</a>
+                        <a href="">About</a>
+                        <a href="">Contact</a>
+                        <a href="">Orders</a>
+                    </span>
+
+                    <span>
+                        <a target="_blank" href="https://www.instagram.com/accounts/login/two_factor?next=%2F"><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fas fa-user"></i></a>
+                    </span>
+                </nav>
+            </header>
+                        
+                    
+    
+<main>
+    <section class="container">
+        
+        <form action="" class="login-form">
+            <h3>Login</h3>
+            <input type="text" name="email" id="email" placeholder="Email address" required>
+            <input type="password" name="password" id="password" placeholder="Password" placeholder="enter your password" required>
+            <button>Login</button>
+        </form>
+    </section>
+
+    <section>
+
+    </section>
+</main>
+    
+    
+</body>
+</html>
